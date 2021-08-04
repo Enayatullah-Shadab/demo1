@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import {reactive} from 'vue'
+import {reactive} from "vue"
 
 export default{
   setup(){
@@ -22,16 +22,15 @@ export default{
     
     return{
       name: "Shadab",
-      value:0,
+      state,
+      // value:0,
       count(){
-        this.value++
+        state.value++
         console.log("Clicked  "+ state.value)
       }
 
     }
   }
-
-
 }
 </script>
 <style>
